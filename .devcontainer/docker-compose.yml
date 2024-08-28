@@ -1,0 +1,8 @@
+version: '3.8'
+name: app-slack-clone
+services:
+  devcontainer:
+    image: mcr.microsoft.com/devcontainers/typescript-node:1-20-bookworm
+    volumes:
+      - ../..:/workspaces:cached
+    command: sleep infinity
